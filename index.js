@@ -4,14 +4,10 @@ document
     var sound = new Audio("audio/When-hover.mp3");
     sound.play();
   });
-document.querySelector(".game-title").addEventListener("click", function () {
-  var bgm = new Audio("audio/HorrorBgm.mp3");
-  bgm.play();
-  bgm.loop();
-});
 
+// for audio
 window.onload = function () {
-  document.querySelector(".audio").play();
+  document.getElementById("bgmAudio").play();
 };
 
 // INSTRUCTION
