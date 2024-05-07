@@ -6,10 +6,9 @@ document
   });
 
 // for audio
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("bgmAudio").play();
-};
-
+});
 // INSTRUCTION
 
 let instruction = document.getElementById("ins");
