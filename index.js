@@ -7,11 +7,13 @@ document
 
 // for audio
 document.addEventListener("DOMContentLoaded", function () {
-  try {
-    document.getElementById("bgmAudio").play();
-  } catch (error) {
-    console.error("Error playing audio:", error);
-  }
+  // try {
+  //   document.getElementById("bgmAudio").play();
+  // } catch (error) {
+  //   console.error("Error playing audio:", error);
+  // }
+  const button = document.querySelector(".game-title");
+  button.click();
 });
 // INSTRUCTION
 
