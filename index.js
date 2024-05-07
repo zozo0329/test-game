@@ -7,19 +7,10 @@ document
 document.querySelector(".game-title").addEventListener("click", function () {
   var bgmSound = new Audio("audio/HorrorBgm.mp3");
   bgmSound.play();
-  bgmSound.loop();
 });
 
-// for audio
-document.addEventListener("DOMContentLoaded", function () {
-  // try {
-  //   document.getElementById("bgmAudio").play();
-  // } catch (error) {
-  //   console.error("Error playing audio:", error);
-  // }
-  const button = document.querySelector(".game-title");
-  button.click();
-});
+const button = document.querySelector(".game-title");
+button.click();
 // INSTRUCTION
 
 let instruction = document.getElementById("ins");
