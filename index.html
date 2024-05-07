@@ -10,16 +10,19 @@
       rel="stylesheet"
     />
     <title>Grand Parents</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <main>
+      <!-- AUDIO -->
+      <audio id="bgmAudio" src="audio/HorrorBgm.mp3" autoplay loop></audio>
+
       <div class="game-title">
         <h1>Grand Parents</h1>
       </div>
-
+      <!-- main menu -->
       <div class="main-menu-btns">
-        <button>Start</button>
+        <a href="main.html"><button>Start</button></a>
         <button onclick="insAp()">Instruction</button>
         <button onclick="devAp()">Dev Message</button>
       </div>
@@ -35,6 +38,6 @@
         <button>Welcome</button>
       </div>
     </main>
-    <script src="main.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

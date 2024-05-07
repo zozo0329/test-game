@@ -7,9 +7,15 @@ document
 document.querySelector(".game-title").addEventListener("click", function () {
   var bgm = new Audio("audio/HorrorBgm.mp3");
   bgm.play();
+  bgm.loop();
 });
 
+window.onload = function () {
+  document.querySelector(".audio").play();
+};
+
 // INSTRUCTION
+
 let instruction = document.getElementById("ins");
 function insAp() {
   instruction.style.display = "block";
