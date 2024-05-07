@@ -7,7 +7,11 @@ document
 
 // for audio
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("bgmAudio").play();
+  try {
+    document.getElementById("bgmAudio").play();
+  } catch (error) {
+    console.error("Error playing audio:", error);
+  }
 });
 // INSTRUCTION
 
