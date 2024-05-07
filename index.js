@@ -4,6 +4,11 @@ document
     var sound = new Audio("audio/When-hover.mp3");
     sound.play();
   });
+document.querySelector(".game-title").addEventListener("click", function () {
+  var bgmSound = new Audio("audio/HorrorBgm.mp3");
+  bgmSound.play();
+  bgmSound.loop();
+});
 
 // for audio
 document.addEventListener("DOMContentLoaded", function () {
