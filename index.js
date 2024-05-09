@@ -4,13 +4,7 @@ document
     var sound = new Audio("audio/When-hover.mp3");
     sound.play();
   });
-document.querySelector(".game-title").addEventListener("click", function () {
-  var bgmSound = new Audio("audio/HorrorBgm.mp3");
-  bgmSound.play();
-});
 
-const button = document.querySelector(".game-title");
-button.click();
 // INSTRUCTION
 
 let instruction = document.getElementById("ins");
@@ -45,3 +39,26 @@ document
     let devSound = new Audio("audio/When-hover.mp3");
     devSound.play();
   });
+
+// MUSIC ICON
+let musicOff = document.getElementById("musicOff");
+let musicOn = document.getElementById("musicOn");
+document.getElementById("musicOff").addEventListener("click", function () {
+  musicOff.style.display = "none";
+  musicOn.style.display = "block";
+});
+document.getElementById("musicOn").addEventListener("click", function () {
+  musicOff.style.display = "block";
+  musicOn.style.display = "none";
+});
+
+// FOR BACKGROUND MUSIC
+let bgm = new Audio("audio/HorrorBgm.mp3");
+document.querySelector("#musicOff").addEventListener("click", function () {
+  bgm.play();
+  bgm.loop();
+});
+
+document.querySelector("#musicOn").addEventListener("click", function () {
+  bgm.pause();
+});

@@ -122,3 +122,20 @@ body {
 .dev-message button:hover {
   opacity: 0.7;
 }
+/* Icons */
+.muted-icon i {
+  position: fixed;
+  top: 640px;
+  right: 40px;
+  font-size: 50px;
+  color: #ff3535be;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.muted-icon i:hover {
+  color: #ce0000;
+}
+
+#musicOn {
+  display: none;
+}
