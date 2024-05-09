@@ -1,9 +1,16 @@
+// FOR BUTTONS
 document
   .querySelector(".main-menu-btns")
   .addEventListener("click", function () {
     var sound = new Audio("audio/When-hover.mp3");
     sound.play();
   });
+
+document.querySelector(".game-title").addEventListener("click", function () {
+  let laugh = new Audio("audio/HorrorLaugh.mp3");
+  laugh.play();
+  laugh.volume = 0.3;
+});
 
 // INSTRUCTION
 
